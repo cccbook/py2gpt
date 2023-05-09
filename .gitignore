@@ -1,0 +1,50 @@
+files
+*.gz
+raw
+*.pth
+.pytest_cache
+
+.vscode
+*.exe
+*.exe.stackdump
+*.o
+*.zip
+*.gz
+*.tar
+a.out
+*.bak
+bak
+node_modules
+db
+# mac
+.DS_Store
+# pyenv
+env
+# ipynb
+.ipynb_checkpoints
+# deepLearning model
+*.ckpt
+*.pt
+model
+models
+# deepLearning data
+data
+.data
+out
+processed
+raw
+node_modules
+__pycache__
+# Book build output
+_book
+
+# eBook build output
+
+*.zip
+*.rar
+*.tar
+*.gz
+*.mp3
+# video
+*.mp4
+*.avi
