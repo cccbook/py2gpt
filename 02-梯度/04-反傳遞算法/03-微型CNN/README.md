@@ -1,0 +1,33 @@
+# micrograd 的 CNN 擴充
+
+```
+pip3 install keras tensorflow scikit-learn
+```
+
+## run
+
+```
+$ python3 microCnn.py                
+loss in step 0 is 15.007467608980466
+loss in step 1000 is 0.689894476189381
+loss in step 2000 is 0.5484298192161449
+loss in step 3000 is 0.49999042414069594
+loss in step 4000 is 0.4461378203569224
+loss in step 5000 is 0.44169267168244053
+loss in step 6000 is 0.40240651556929274
+loss in step 7000 is 0.3913317902597613
+loss in step 8000 is 0.37506560274049405
+loss in step 9000 is 0.3701369834421536
+loss in step 10000 is 0.35034219480879475
+loss in step 11000 is 0.33754374798629466
+loss in step 12000 is 0.3505012706332864
+loss in step 13000 is 0.32674710388385825
+loss in step 14000 is 0.33140949117119023
+loss in step 15000 is 0.3147208893381591
+loss in step 16000 is 0.33152348369262286
+loss in step 17000 is 0.3346180913965382
+loss in step 18000 is 0.3079174233165358
+loss in step 19000 is 0.3072688489371206
+loss in final step 20000 is 0.3157598011539965
+accuracy on test data is 90.84 %
+```
