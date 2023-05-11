@@ -13,6 +13,7 @@ raw
 *.tar
 a.out
 *.bak
+*.bin
 bak
 node_modules
 db
