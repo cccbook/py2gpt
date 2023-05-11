@@ -14,6 +14,7 @@ raw
 a.out
 *.bak
 *.bin
+.cache/
 bak
 node_modules
 db
