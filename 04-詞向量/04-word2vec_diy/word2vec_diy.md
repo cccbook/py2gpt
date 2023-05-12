@@ -3,7 +3,7 @@
 程式來源 -- [Word2vec from Scratch](https://jaketae.github.io/study/word2vec/)
 
 ```
-$python embed.py
+$python word2vec_diy.py
 {'artificial': 0, 'seen': 1, 'perform': 2, 'is': 3, 'without': 4, 'in':
 5, 'through': 6, 'algorithms': 7, 'where': 8, 'it': 9, 'known': 10, 'variety': 11, 'such': 12, 'build': 13, 'needed': 14, 'sample': 15, 'used':
 16, 'vision': 17, 'to': 18, 'decisions': 19, 'programmed': 20, 'on': 21, 'training': 22, 'order': 23, 'infeasible': 24, 'explicitly': 25, 'so':

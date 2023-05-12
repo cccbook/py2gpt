@@ -35,7 +35,7 @@ for step in range(steps):
     if step % 1000 == 0:
         loss = calculate_loss(train_images, y_train, Wb.data)
         print(f'loss in step {step} is {loss}')
-    Wb.data = Wb.data - 0.01*Wb.grad
+    Wb.data = Wb.data - 0.01*Wb.grad # update weights, 相當於 optimizer.step()
     Wb.grad = 0
 
 loss = calculate_loss(train_images, y_train, Wb.data)

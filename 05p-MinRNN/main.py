@@ -159,7 +159,7 @@ corpus = sys.argv[1]
 method = sys.argv[2]
 job = sys.argv[3]
 
-load_data(f'{corpus}.txt')
+load_data(f'corpus/{corpus}.txt')
 if job == 'train':
     train(corpus, method)
 elif job == 'test':
