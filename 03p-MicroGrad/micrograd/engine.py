@@ -1,3 +1,4 @@
+import numpy as np
 
 class Value:
     """ stores a single scalar value and its gradient """
