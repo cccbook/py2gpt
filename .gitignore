@@ -38,7 +38,6 @@ raw
 node_modules
 __pycache__
 # Book build output
-_book
 
 # eBook build output
 

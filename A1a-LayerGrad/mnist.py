@@ -1,6 +1,6 @@
 # 來源 -- https://github.com/newcodevelop/micrograd/blob/master/mnist.ipynb
 
-from macrograd import Value
+from layergrad import Value
 
 from keras.datasets import mnist
 import keras
