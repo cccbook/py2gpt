@@ -56,3 +56,14 @@ def gradientDescendent(f, p0, step=0.009, max_loops=100000, dump_period=1000):
     print('{:05d}:f(p)={:.3f} p={:s} gp={:s} glen={:.5f}'.format(i, fp, str(p), str(gp), glen))
     return p # 傳回最低點！
 ```
+
+## 梯度下降法應用範例
+
+有了上述的梯度下降法程式之後，我們就可以用來尋找函數的最小值，以下是兩個範例：
+
+1. [gdArray.py](gdArray.py): 尋找函數  $f(x,y,z) = (x-1)^2 + (y-2)^2 + (z-3)^2$ 的最小值
+    * [gdArray.py -- 用梯度下降法尋找 f(x,y,z) 函數的最小值](gdArray.md)
+2. [gdRegression.py](gdRegression.py): 尋找一迴歸直線，讓直線和樣本間的誤差平方和最小 (最小平方法)。
+    * [gdRegression.py -- 用梯度下降法尋找迴歸線](gdRegression.md)
+
+

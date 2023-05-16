@@ -1,4 +1,4 @@
-# gdRegression.py
+# gdRegression.py -- 用梯度下降法尋找迴歸線
 
 gdRegression.py 這個程式想找出一組 (x,y) 資料的回歸線 $y=a_0 x + a_1$ 之參數值 $[a_0,a_1]$
 

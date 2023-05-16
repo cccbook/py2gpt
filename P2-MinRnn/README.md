@@ -1,6 +1,6 @@
-# RNN -- get embed
+# RNN
 
-取得詞彙對應的 embed ，並計算兩兩之間的相似度
+* [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 
 ```
 $ python main.py english gru train
