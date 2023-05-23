@@ -1,5 +1,7 @@
 # minGPT 的範例執行方式
 
+專案來源 -- https://github.com/karpathy/mingpt
+
 GPT 的原理說明請參考 -- https://github.com/cccbook/py2gpt/wiki/gpt
 
 ## chargpt.py -- 學習語言模型
