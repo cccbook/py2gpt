@@ -67,3 +67,5 @@ def gradientDescendent(f, p0, step=0.009, max_loops=100000, dump_period=1000):
     * [gdRegression.py -- 用梯度下降法尋找迴歸線](gdRegression.md)
 
 
+詳細的文章解說，請參考 [從微分到梯度下降法](https://github.com/cccbook/py2gpt/wiki/grad)
+
