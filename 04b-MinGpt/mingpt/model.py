@@ -266,15 +266,15 @@ class GPT(nn.Module):
         # forward the GPT model itself
         tok_emb = self.transformer.wte(idx) # token embeddings of shape (b, t, n_embd)
         pos_emb = self.transformer.wpe(pos) # position embeddings of shape (1, t, n_embd)
-        x = self.transformer.drop(tok_emb + pos_emb)
-        for block in self.transformer.h:
+        x = self.transformer.drop(tok_emb + pos_emb) # 詞向量 + 位置向量
+        for block in self.transformer.h: # 經過 h 個 block (含 Attention) 之後
             x = block(x)
-        x = self.transformer.ln_f(x)
-        logits = self.lm_head(x)
+        x = self.transformer.ln_f(x) # 正規化
+        logits = self.lm_head(x) # 從 embed_size 轉回 vocab_size 大小
 
         # if we are given some desired targets also calculate the loss
         loss = None
-        if targets is not None:
+        if targets is not None: # 用 CrossEntropy 計算 loss
             loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=-1)
 
         return logits, loss

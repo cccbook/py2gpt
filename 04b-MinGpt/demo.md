@@ -1,5 +1,8 @@
 # demo.py
 
+學習排序 sorting 的範例
+
+## Run
 
 ```
 ccckmit@asus MINGW64 /d/ccc/code/py/minGPT (master)
