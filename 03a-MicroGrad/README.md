@@ -1,6 +1,8 @@
 # micrograd 梯度引擎
 
-Kaparthy 實作的小型梯度引擎，是學習《反傳遞演算法》非常好的素材。
+* 關於反傳遞算法的原理，請參考 -- https://github.com/cccbook/py2gpt/wiki/backProp
+
+micrograd 是 Kaparthy 實作的小型梯度引擎，透過 micrograd 您可以學會如何實作一套《反傳遞演算法》的梯度引擎。
 
 ## ex0.py -- 示範如何用反傳遞計算梯度
 
