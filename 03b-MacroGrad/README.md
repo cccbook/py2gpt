@@ -1,8 +1,14 @@
 # MacroGrad -- 修改自 MicroGrad
 
-改用 numpy 去處理向量的加減乘除等反傳遞功能，這樣就可以讓
-原本只能對純量進行反傳遞梯度計算的 micrograd 變成可以對向量
-進行梯度計算的 macrograd 了。
+Karpathy 的 micrograd 梯度引擎的主要類別 Value 是以單一數值為單位進行反傳遞梯度計算。
+
+* https://github.com/newcodevelop/micrograd/
+
+Dibyanayan Bandyopadhyay (github 名稱為 newcodevelop) 將其修改為以 numpy 的 ndarray 為單位進行計算。
+
+* https://github.com/newcodevelop/micrograd/
+
+這樣就可以讓原本只能對純量進行反傳遞梯度計算的 micrograd 變成可以對向量進行梯度計算的 macrograd 了。
 
 ## 執行 mnist.py 範例
 
