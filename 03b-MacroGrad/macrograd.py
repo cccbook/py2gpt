@@ -1,9 +1,7 @@
-# 來源 -- https://github.com/newcodevelop/micrograd/blob/master/mnist.ipynb
+# 來源 -- https://github.com/newcodevelop/micrograd/blob/master/micrograd/engine.py
 import numpy as np
 
-class Value:
-    """ stores a value and its gradient """
-
+class Tensor:
     def __init__(self, data, _children=(), _op=''):
         self.data = data
         self.grad = 0
@@ -13,8 +11,8 @@ class Value:
         self._op = _op # the op that produced this node, for graphviz / debugging / etc
 
     def __add__(self, other):
-        other = other if isinstance(other, Value) else Value(other)
-        out = Value(self.data + other.data, (self, other), '+')
+        other = other if isinstance(other, Tensor) else Tensor(other)
+        out = Tensor(self.data + other.data, (self, other), '+')
 
         def _backward():
             self.grad += out.grad
@@ -24,8 +22,8 @@ class Value:
         return out
 
     def __mul__(self, other):
-        other = other if isinstance(other, Value) else Value(other)
-        out = Value(self.data * other.data, (self, other), '*')
+        other = other if isinstance(other, Tensor) else Tensor(other)
+        out = Tensor(self.data * other.data, (self, other), '*')
 
         def _backward():
             self.grad += other.data * out.grad
@@ -37,7 +35,7 @@ class Value:
 
     def __pow__(self, other):
         assert isinstance(other, (int, float)), "only supporting int/float powers for now"
-        out = Value(self.data**other, (self,), f'**{other}')
+        out = Tensor(self.data**other, (self,), f'**{other}')
 
         def _backward():
             self.grad += (other * self.data**(other-1)) * out.grad
@@ -47,7 +45,7 @@ class Value:
         return out
 
     def relu(self):
-        out = Value(0 if self.data < 0 else self.data, (self,), 'ReLU')
+        out = Tensor(0 if self.data < 0 else self.data, (self,), 'ReLU')
 
         def _backward():
             self.grad += (out.data > 0) * out.grad
@@ -57,8 +55,8 @@ class Value:
         return out
 
     def matmul(self,other):
-        other = other if isinstance(other, Value) else Value(other)
-        out = Value(np.matmul(self.data , other.data), (self, other), 'matmul')
+        other = other if isinstance(other, Tensor) else Tensor(other)
+        out = Tensor(np.matmul(self.data , other.data), (self, other), 'matmul')
 
         def _backward():
             self.grad += np.dot(out.grad,other.data.T)
@@ -69,7 +67,7 @@ class Value:
         return out
 
     def softmax(self):
-        out =  Value(np.exp(self.data) / np.sum(np.exp(self.data), axis=1)[:, None], (self,), 'softmax')
+        out =  Tensor(np.exp(self.data) / np.sum(np.exp(self.data), axis=1)[:, None], (self,), 'softmax')
         softmax = out.data
 
         def _backward():
@@ -83,7 +81,7 @@ class Value:
         return out
 
     def log(self):
-        out = Value(np.log(self.data),(self,),'log')
+        out = Tensor(np.log(self.data),(self,),'log')
 
         def _backward():
             self.grad += out.grad/self.data
@@ -92,7 +90,7 @@ class Value:
         return out    
     
     def reduce_sum(self,axis = None):
-        out = Value(np.sum(self.data,axis = axis), (self,), 'REDUCE_SUM')
+        out = Tensor(np.sum(self.data,axis = axis), (self,), 'REDUCE_SUM')
         
         def _backward():
             output_shape = np.array(self.data.shape)
@@ -146,4 +144,4 @@ class Value:
         return other * self**-1
 
     def __repr__(self):
-        return f"Value(data={self.data}, grad={self.grad})"
+        return f"Tensor(data={self.data}, grad={self.grad})"

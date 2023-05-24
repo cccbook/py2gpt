@@ -1,6 +1,6 @@
 # 來源 -- https://github.com/newcodevelop/micrograd/blob/master/mnist.ipynb
 
-from macrograd import Value
+from macrograd import Tensor
 
 from keras.datasets import mnist
 import keras
@@ -19,10 +19,10 @@ def calculate_loss(X, Y, W):
 batch_size = 32
 steps = 20000
 # new initialized weights for gradient descent
-Wb = Value(np.random.randn(784, 10))
+Wb = Tensor(np.random.randn(784, 10))
 for step in range(steps):
     ri = np.random.permutation(train_images.shape[0])[:batch_size]
-    Xb, yb = Value(train_images[ri]), Value(y_train[ri])
+    Xb, yb = Tensor(train_images[ri]), Tensor(y_train[ri])
     y_predW = Xb.matmul(Wb)
     probs = y_predW.softmax()
     log_probs = probs.log()

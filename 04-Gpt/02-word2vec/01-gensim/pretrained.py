@@ -1,6 +1,4 @@
 import gensim.downloader
-# Show all available models in gensim-data
-# print(list(gensim.downloader.info()['models'].keys()))
 model = gensim.downloader.load('glove-twitter-25')
 
 print(f"model.most_similar('twitter')={model.most_similar('twitter')}")
