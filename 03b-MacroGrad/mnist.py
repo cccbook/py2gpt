@@ -13,33 +13,28 @@ train_images = train_images.reshape(60000, 784)
 test_images = test_images.reshape(10000, 784)
 y_train = keras.utils.to_categorical(y_train)
 
-def calculate_loss(X, Y, W):
-    return -(1/X.shape[0])*np.sum(np.sum(Y*np.log(np.exp(np.matmul(X, W)) / np.sum(np.exp(np.matmul(X, W)), axis=1)[:, None]), axis=1))
+def forward(X,Y,W):
+    y_predW = X.matmul(W)
+    probs = y_predW.softmax()
+    loss = probs.cross_entropy(Y)
+    return loss
 
 batch_size = 32
 steps = 20000
+
+X = Tensor(train_images); Y = Tensor(y_train) # 全部資料
 # new initialized weights for gradient descent
 Wb = Tensor(np.random.randn(784, 10))
 for step in range(steps):
     ri = np.random.permutation(train_images.shape[0])[:batch_size]
-    Xb, yb = Tensor(train_images[ri]), Tensor(y_train[ri])
-    y_predW = Xb.matmul(Wb)
-    probs = y_predW.softmax()
-    log_probs = probs.log()
-
-    zb = yb*log_probs
-
-    outb = zb.reduce_sum(axis=1)
-    finb = -outb.reduce_sum()  # cross entropy loss
-    finb.backward()
-    if step % 1000 == 0:
-        loss = calculate_loss(train_images, y_train, Wb.data)
+    Xb, yb = Tensor(train_images[ri]), Tensor(y_train[ri]) # Batch 資料
+    lossb = forward(Xb, yb, Wb)
+    lossb.backward()
+    if step % 1000 == 0 or step == steps-1:
+        loss = forward(X, Y, Wb).data/X.data.shape[0]
         print(f'loss in step {step} is {loss}')
     Wb.data = Wb.data - 0.01*Wb.grad # update weights, 相當於 optimizer.step()
     Wb.grad = 0
-
-loss = calculate_loss(train_images, y_train, Wb.data)
-print(f'loss in final step {step+1} is {loss}')
 
 '''
 $ python mnist.py

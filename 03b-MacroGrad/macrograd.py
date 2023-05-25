@@ -103,6 +103,13 @@ class Tensor:
 
         return out
 
+    def cross_entropy(self, yb):
+        log_probs = self.log()
+        zb = yb*log_probs
+        outb = zb.reduce_sum(axis=1)
+        loss = -outb.reduce_sum()  # cross entropy loss
+        return loss # 本函數不用指定反傳遞，因為所有運算都已經有反傳遞了，所以直接呼叫 loss.backward() 就能反傳遞了
+
     def backward(self):
 
         # topological order all of the children in the graph
