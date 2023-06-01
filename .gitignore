@@ -1,3 +1,5 @@
+output/
+
 files
 *.gz
 raw

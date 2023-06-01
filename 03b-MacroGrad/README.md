@@ -8,7 +8,7 @@ Dibyanayan Bandyopadhyay (github 名稱為 newcodevelop) 將其修改為以 nump
 
 * https://github.com/newcodevelop/micrograd/
 
-這樣就可以讓原本只能對純量進行反傳遞梯度計算的 micrograd 變成可以對向量進行梯度計算的 macrograd 了。
+這樣就可以讓原本只能對純量進行反傳遞梯度計算的 micrograd 變成可以對更高維的《向量，矩陣或張量》進行梯度計算的 macrograd 了。
 
 ## 執行 mnist.py 範例
 

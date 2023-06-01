@@ -3,18 +3,26 @@ import numpy as np
 
 class Tensor:
     def __init__(self, data, _children=(), _op=''):
-        self.data = data
-        self.grad = 0
+        self.data = np.array(data)
+        self.grad = np.zeros(self.data.shape)
         # internal variables used for autograd graph construction
         self._backward = lambda: None
         self._prev = set(_children)
         self._op = _op # the op that produced this node, for graphviz / debugging / etc
 
+    @property
+    def shape(self):
+        return self.data.shape
+    
     def __add__(self, other):
-        other = other if isinstance(other, Tensor) else Tensor(other)
+        # assert self.shape == other.shape
+        other = other if isinstance(other, Tensor) else Tensor(np.zeros(self.shape)+other) # 讓維度一致
         out = Tensor(self.data + other.data, (self, other), '+')
 
         def _backward():
+            # print('self.grad = ', self.grad)
+            # print('other.grad = ', other.grad)
+            # print('out.grad = ', out.grad, 'op=', out._op)
             self.grad += out.grad
             other.grad += out.grad
         out._backward = _backward
@@ -22,10 +30,14 @@ class Tensor:
         return out
 
     def __mul__(self, other):
-        other = other if isinstance(other, Tensor) else Tensor(other)
+        other = other if isinstance(other, Tensor) else Tensor(np.zeros(self.shape)+other) # 讓維度一致
+        # other = other if isinstance(other, Tensor) else Tensor(other)
         out = Tensor(self.data * other.data, (self, other), '*')
 
         def _backward():
+            print('self.shape=', self.shape)
+            print('other.shape=', other.shape)
+            print('out.shape=', out.shape)
             self.grad += other.data * out.grad
             other.grad += self.data * out.grad
                         
@@ -45,7 +57,7 @@ class Tensor:
         return out
 
     def relu(self):
-        out = Tensor(0 if self.data < 0 else self.data, (self,), 'ReLU')
+        out = Tensor(np.maximum(0, self.data), (self,), 'relu') # Tensor(0 if self.data < 0 else self.data, (self,), 'ReLU')
 
         def _backward():
             self.grad += (out.data > 0) * out.grad
@@ -71,10 +83,9 @@ class Tensor:
         softmax = out.data
 
         def _backward():
-            self.grad += (out.grad - np.reshape(
-            np.sum(out.grad * softmax, 1),
-            [-1, 1]
-              )) * softmax
+            s = np.sum(out.grad * softmax, 1)
+            t = np.reshape(s, [-1, 1]) # reshape 為 n*1
+            self.grad += (out.grad - t) * softmax
 
         out._backward = _backward
 
@@ -89,8 +100,8 @@ class Tensor:
 
         return out    
     
-    def reduce_sum(self,axis = None):
-        out = Tensor(np.sum(self.data,axis = axis), (self,), 'REDUCE_SUM')
+    def sum(self,axis = None):
+        out = Tensor(np.sum(self.data,axis = axis), (self,), 'SUM')
         
         def _backward():
             output_shape = np.array(self.data.shape)
@@ -106,8 +117,8 @@ class Tensor:
     def cross_entropy(self, yb):
         log_probs = self.log()
         zb = yb*log_probs
-        outb = zb.reduce_sum(axis=1)
-        loss = -outb.reduce_sum()  # cross entropy loss
+        outb = zb.sum(axis=1)
+        loss = -outb.sum()  # cross entropy loss
         return loss # 本函數不用指定反傳遞，因為所有運算都已經有反傳遞了，所以直接呼叫 loss.backward() 就能反傳遞了
 
     def backward(self):
