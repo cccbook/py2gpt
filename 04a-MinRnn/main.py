@@ -62,6 +62,7 @@ class RNNLM(nn.Module):
         return out, h
 
 def train(corpus, method):
+    print('training ...')
     global model
     model = RNNLM(method, vocab_size, embed_size, hidden_size, num_layers).to(device)
 
@@ -71,10 +72,12 @@ def train(corpus, method):
 
     # Train the model
     for epoch in range(num_epochs):
+        # print('epoch=', epoch)
         # Set initial hidden // and cell states (for LSTM)
         states = torch.zeros(num_layers, batch_size, hidden_size).to(device)
         
         for i in range(0, ids.size(1) - seq_length, seq_length):
+            # print('i=', i)
             # Get mini-batch inputs and targets
             inputs = ids[:, i:i+seq_length].to(device) # 輸入為目前詞 (1-Batch)
             targets = ids[:, (i+1):(i+1)+seq_length].to(device) # 輸出為下個詞 (1-Batch)

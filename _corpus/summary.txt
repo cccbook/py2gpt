@@ -1,0 +1,1000 @@
+Q: the white pig bite every pig A: pig bite pig
+Q: the cat A: cat
+Q: every cat A: cat
+Q: every dog chase the pig A: dog chase pig
+Q: a little cat chase every white pig A: cat chase pig
+Q: every black pig A: pig
+Q: every pig chase a little pig A: pig chase pig
+Q: a white dog bite a pig A: dog bite pig
+Q: the white dog A: dog
+Q: every little pig A: pig
+Q: every white dog chase the cat A: dog chase cat
+Q: a pig A: pig
+Q: every cat chase the pig A: cat chase pig
+Q: the white cat A: cat
+Q: the cat A: cat
+Q: the black pig A: pig
+Q: the black cat love the pig A: cat love pig
+Q: a black dog A: dog
+Q: the little cat love the white dog A: cat love dog
+Q: a black cat love every dog A: cat love dog
+Q: the little cat A: cat
+Q: the dog A: dog
+Q: a pig bite every white cat A: pig bite cat
+Q: the pig A: pig
+Q: a white cat A: cat
+Q: the cat A: cat
+Q: every black dog A: dog
+Q: the white pig chase the pig A: pig chase pig
+Q: a white pig A: pig
+Q: a dog chase a cat A: dog chase cat
+Q: every cat bite a black cat A: cat bite cat
+Q: every cat bite the white cat A: cat bite cat
+Q: every white dog chase every little cat A: dog chase cat
+Q: a dog chase a white dog A: dog chase dog
+Q: the pig bite the white cat A: pig bite cat
+Q: the dog A: dog
+Q: every white pig love a pig A: pig love pig
+Q: every cat love the little dog A: cat love dog
+Q: every dog chase a cat A: dog chase cat
+Q: the little dog A: dog
+Q: a cat A: cat
+Q: the cat love every white dog A: cat love dog
+Q: the cat A: cat
+Q: the black cat A: cat
+Q: a black dog love the pig A: dog love pig
+Q: the little cat A: cat
+Q: every black dog chase the dog A: dog chase dog
+Q: every cat bite every black pig A: cat bite pig
+Q: the cat A: cat
+Q: every white pig A: pig
+Q: every little cat chase the cat A: cat chase cat
+Q: the black pig love the black dog A: pig love dog
+Q: the white pig love the white dog A: pig love dog
+Q: the pig A: pig
+Q: every pig bite the cat A: pig bite cat
+Q: the black pig A: pig
+Q: the dog A: dog
+Q: every little cat chase every black pig A: cat chase pig
+Q: the dog bite the black dog A: dog bite dog
+Q: a white dog chase the dog A: dog chase dog
+Q: the black pig A: pig
+Q: the black pig A: pig
+Q: the white cat love a cat A: cat love cat
+Q: a black cat A: cat
+Q: the dog A: dog
+Q: a pig A: pig
+Q: the cat A: cat
+Q: a black pig A: pig
+Q: the pig A: pig
+Q: a cat A: cat
+Q: the white dog A: dog
+Q: the white pig bite a pig A: pig bite pig
+Q: every dog A: dog
+Q: a pig chase a cat A: pig chase cat
+Q: a dog bite every pig A: dog bite pig
+Q: a dog chase a black cat A: dog chase cat
+Q: a pig A: pig
+Q: a white pig A: pig
+Q: every pig chase every pig A: pig chase pig
+Q: every cat A: cat
+Q: a dog bite every white pig A: dog bite pig
+Q: every black cat A: cat
+Q: the white cat bite a cat A: cat bite cat
+Q: a pig chase the little pig A: pig chase pig
+Q: every black cat love a pig A: cat love pig
+Q: the little pig A: pig
+Q: every white dog A: dog
+Q: a white dog bite every black dog A: dog bite dog
+Q: every pig A: pig
+Q: a cat bite every white dog A: cat bite dog
+Q: the dog chase every cat A: dog chase cat
+Q: a cat A: cat
+Q: a black cat A: cat
+Q: every black cat A: cat
+Q: the little pig A: pig
+Q: every black pig chase a little cat A: pig chase cat
+Q: the pig bite a cat A: pig bite cat
+Q: the black pig chase a cat A: pig chase cat
+Q: the dog A: dog
+Q: the black pig bite a black dog A: pig bite dog
+Q: every pig bite the little dog A: pig bite dog
+Q: every cat A: cat
+Q: every white cat bite every little dog A: cat bite dog
+Q: the pig A: pig
+Q: a black pig chase a black cat A: pig chase cat
+Q: every little dog A: dog
+Q: the white cat A: cat
+Q: a black cat love the cat A: cat love cat
+Q: every pig A: pig
+Q: every white pig chase the white dog A: pig chase dog
+Q: a little pig chase every dog A: pig chase dog
+Q: a dog love every little cat A: dog love cat
+Q: a pig A: pig
+Q: a white dog A: dog
+Q: the little cat love the pig A: cat love pig
+Q: the little dog chase the little pig A: dog chase pig
+Q: a dog A: dog
+Q: the pig bite the dog A: pig bite dog
+Q: a white pig A: pig
+Q: a black cat A: cat
+Q: a white pig bite a white dog A: pig bite dog
+Q: a cat A: cat
+Q: the black dog A: dog
+Q: every black cat A: cat
+Q: a white pig bite the cat A: pig bite cat
+Q: a pig love the black cat A: pig love cat
+Q: every black dog love every cat A: dog love cat
+Q: a pig A: pig
+Q: every cat A: cat
+Q: the white cat bite every black pig A: cat bite pig
+Q: a cat bite a dog A: cat bite dog
+Q: a black cat A: cat
+Q: the white dog bite every little cat A: dog bite cat
+Q: a dog bite a white cat A: dog bite cat
+Q: the white pig A: pig
+Q: the black dog A: dog
+Q: every black dog A: dog
+Q: a little pig A: pig
+Q: the little dog chase every cat A: dog chase cat
+Q: a black pig A: pig
+Q: the black pig A: pig
+Q: every little pig A: pig
+Q: every pig A: pig
+Q: the black dog A: dog
+Q: every black dog bite a little pig A: dog bite pig
+Q: every pig chase a white cat A: pig chase cat
+Q: the cat bite the cat A: cat bite cat
+Q: the cat A: cat
+Q: a little cat A: cat
+Q: every cat A: cat
+Q: a white pig A: pig
+Q: every black cat bite every pig A: cat bite pig
+Q: every little pig A: pig
+Q: every cat chase the pig A: cat chase pig
+Q: every black cat bite every little pig A: cat bite pig
+Q: every pig A: pig
+Q: every white dog bite a little cat A: dog bite cat
+Q: a dog A: dog
+Q: every black dog chase the cat A: dog chase cat
+Q: a black pig chase a little pig A: pig chase pig
+Q: a black dog chase a cat A: dog chase cat
+Q: a dog A: dog
+Q: a white cat A: cat
+Q: a pig A: pig
+Q: the little dog love every cat A: dog love cat
+Q: a white cat bite the pig A: cat bite pig
+Q: the cat bite the pig A: cat bite pig
+Q: every pig bite every little pig A: pig bite pig
+Q: the pig A: pig
+Q: every little dog A: dog
+Q: a white dog A: dog
+Q: a little cat A: cat
+Q: every white dog A: dog
+Q: every little dog A: dog
+Q: a dog A: dog
+Q: a cat chase every black pig A: cat chase pig
+Q: a cat A: cat
+Q: the cat A: cat
+Q: the white pig A: pig
+Q: a black dog chase every black pig A: dog chase pig
+Q: a black dog A: dog
+Q: a white pig A: pig
+Q: a little pig A: pig
+Q: a little pig A: pig
+Q: every cat A: cat
+Q: every cat love the white dog A: cat love dog
+Q: a black dog A: dog
+Q: the pig love a dog A: pig love dog
+Q: every black cat A: cat
+Q: every little dog A: dog
+Q: the white pig A: pig
+Q: every little dog chase the little cat A: dog chase cat
+Q: a white pig chase a cat A: pig chase cat
+Q: every little dog A: dog
+Q: every dog bite the pig A: dog bite pig
+Q: the pig bite the cat A: pig bite cat
+Q: a cat A: cat
+Q: every white dog love the little cat A: dog love cat
+Q: every dog A: dog
+Q: a little pig A: pig
+Q: a pig A: pig
+Q: every pig bite a black pig A: pig bite pig
+Q: the little pig A: pig
+Q: every pig bite a pig A: pig bite pig
+Q: a cat A: cat
+Q: a white cat bite a black dog A: cat bite dog
+Q: the white cat bite every dog A: cat bite dog
+Q: every pig A: pig
+Q: a white cat chase the dog A: cat chase dog
+Q: every little pig A: pig
+Q: a little dog bite every dog A: dog bite dog
+Q: the cat bite a dog A: cat bite dog
+Q: every white cat A: cat
+Q: a dog love the pig A: dog love pig
+Q: every little pig A: pig
+Q: a pig bite the pig A: pig bite pig
+Q: the cat love every cat A: cat love cat
+Q: the white dog love the white dog A: dog love dog
+Q: a pig love every black pig A: pig love pig
+Q: a black pig A: pig
+Q: the pig A: pig
+Q: a cat A: cat
+Q: every pig A: pig
+Q: a little cat A: cat
+Q: a cat A: cat
+Q: every black pig A: pig
+Q: every little pig A: pig
+Q: every white pig bite a white pig A: pig bite pig
+Q: the little dog A: dog
+Q: the pig A: pig
+Q: every little dog love the pig A: dog love pig
+Q: the little cat A: cat
+Q: a white dog chase a white cat A: dog chase cat
+Q: a cat A: cat
+Q: the little pig bite the cat A: pig bite cat
+Q: a white dog chase a dog A: dog chase dog
+Q: a dog bite every little pig A: dog bite pig
+Q: the black dog A: dog
+Q: every little pig bite every white dog A: pig bite dog
+Q: the white cat love the pig A: cat love pig
+Q: the little dog A: dog
+Q: every little dog A: dog
+Q: every dog bite every little cat A: dog bite cat
+Q: the pig A: pig
+Q: every black cat chase every little dog A: cat chase dog
+Q: a little pig A: pig
+Q: a dog A: dog
+Q: every little cat chase the black dog A: cat chase dog
+Q: a white pig A: pig
+Q: a white dog chase every pig A: dog chase pig
+Q: a little pig A: pig
+Q: every white dog A: dog
+Q: a black cat bite the cat A: cat bite cat
+Q: every little dog bite the pig A: dog bite pig
+Q: every little pig A: pig
+Q: the white pig A: pig
+Q: a dog A: dog
+Q: the white dog A: dog
+Q: the cat A: cat
+Q: every cat A: cat
+Q: a white dog A: dog
+Q: a pig bite the dog A: pig bite dog
+Q: a pig A: pig
+Q: every pig chase every little dog A: pig chase dog
+Q: a cat love every black pig A: cat love pig
+Q: the little pig A: pig
+Q: a dog A: dog
+Q: a dog love the black cat A: dog love cat
+Q: every cat love every dog A: cat love dog
+Q: a little cat A: cat
+Q: a cat bite the black cat A: cat bite cat
+Q: every black cat bite a white dog A: cat bite dog
+Q: a dog A: dog
+Q: a little dog chase every little pig A: dog chase pig
+Q: a white cat chase every cat A: cat chase cat
+Q: the pig A: pig
+Q: the little cat A: cat
+Q: a white pig love a dog A: pig love dog
+Q: a cat A: cat
+Q: the black cat A: cat
+Q: a white cat A: cat
+Q: every white cat bite every little dog A: cat bite dog
+Q: a dog A: dog
+Q: every little dog bite every pig A: dog bite pig
+Q: the cat chase a cat A: cat chase cat
+Q: every little cat A: cat
+Q: a pig A: pig
+Q: the little pig A: pig
+Q: a black cat chase every cat A: cat chase cat
+Q: a black pig A: pig
+Q: every cat A: cat
+Q: every black dog A: dog
+Q: the pig chase the cat A: pig chase cat
+Q: a cat A: cat
+Q: a pig A: pig
+Q: a little dog love a white pig A: dog love pig
+Q: a pig A: pig
+Q: the white cat chase a pig A: cat chase pig
+Q: the little cat love every cat A: cat love cat
+Q: a cat A: cat
+Q: the black pig A: pig
+Q: a black cat chase a little cat A: cat chase cat
+Q: the pig A: pig
+Q: every little pig chase every black dog A: pig chase dog
+Q: a black pig chase the cat A: pig chase cat
+Q: the cat chase the pig A: cat chase pig
+Q: the white pig bite every black dog A: pig bite dog
+Q: a little pig A: pig
+Q: a dog love the little pig A: dog love pig
+Q: the dog love every pig A: dog love pig
+Q: every cat A: cat
+Q: a dog bite the white pig A: dog bite pig
+Q: every pig A: pig
+Q: the black pig A: pig
+Q: every dog chase the pig A: dog chase pig
+Q: the dog A: dog
+Q: every little cat A: cat
+Q: the pig bite a little dog A: pig bite dog
+Q: the white dog A: dog
+Q: the white cat A: cat
+Q: the white pig A: pig
+Q: every black dog A: dog
+Q: the dog A: dog
+Q: a black dog bite a black pig A: dog bite pig
+Q: the dog A: dog
+Q: a little dog love a black pig A: dog love pig
+Q: the dog bite every dog A: dog bite dog
+Q: every black dog A: dog
+Q: the black pig A: pig
+Q: a black dog love a pig A: dog love pig
+Q: every white cat chase a pig A: cat chase pig
+Q: every cat love the black cat A: cat love cat
+Q: every little dog A: dog
+Q: every cat chase a pig A: cat chase pig
+Q: the little cat bite every white pig A: cat bite pig
+Q: the white dog bite a little dog A: dog bite dog
+Q: a black pig A: pig
+Q: the little pig A: pig
+Q: a cat bite a dog A: cat bite dog
+Q: the little pig A: pig
+Q: the dog chase the little pig A: dog chase pig
+Q: every pig chase the cat A: pig chase cat
+Q: every cat A: cat
+Q: a pig bite the white pig A: pig bite pig
+Q: the cat chase a white cat A: cat chase cat
+Q: the little pig chase a dog A: pig chase dog
+Q: a pig bite every black pig A: pig bite pig
+Q: every cat A: cat
+Q: the cat A: cat
+Q: every black pig A: pig
+Q: every little pig chase the little pig A: pig chase pig
+Q: a black pig A: pig
+Q: every pig A: pig
+Q: every little cat A: cat
+Q: a little pig chase the little cat A: pig chase cat
+Q: every black pig love every black pig A: pig love pig
+Q: every black pig A: pig
+Q: the dog chase the white pig A: dog chase pig
+Q: a pig chase every pig A: pig chase pig
+Q: a dog chase the black cat A: dog chase cat
+Q: a white dog A: dog
+Q: a pig bite the white cat A: pig bite cat
+Q: every white dog chase a dog A: dog chase dog
+Q: a white pig A: pig
+Q: the cat A: cat
+Q: a little cat love the cat A: cat love cat
+Q: every cat bite the pig A: cat bite pig
+Q: every cat bite a black cat A: cat bite cat
+Q: every pig A: pig
+Q: the dog A: dog
+Q: the cat A: cat
+Q: a dog A: dog
+Q: every cat A: cat
+Q: the pig A: pig
+Q: a dog bite a white pig A: dog bite pig
+Q: the little pig love a little cat A: pig love cat
+Q: the dog A: dog
+Q: a cat A: cat
+Q: the cat chase a pig A: cat chase pig
+Q: a black dog A: dog
+Q: a little dog A: dog
+Q: a white cat love every cat A: cat love cat
+Q: every white pig chase a black pig A: pig chase pig
+Q: the black dog A: dog
+Q: the little pig love the white pig A: pig love pig
+Q: the pig A: pig
+Q: a dog A: dog
+Q: a pig A: pig
+Q: a white cat A: cat
+Q: a cat love a pig A: cat love pig
+Q: a dog A: dog
+Q: the black pig A: pig
+Q: every white dog A: dog
+Q: a pig A: pig
+Q: a pig A: pig
+Q: a white pig A: pig
+Q: every black cat love a white dog A: cat love dog
+Q: the cat A: cat
+Q: every pig chase the cat A: pig chase cat
+Q: the dog A: dog
+Q: a white cat chase a white cat A: cat chase cat
+Q: the black pig love a black cat A: pig love cat
+Q: every pig A: pig
+Q: every pig A: pig
+Q: a pig chase a white pig A: pig chase pig
+Q: the black pig A: pig
+Q: every black pig A: pig
+Q: a black pig bite every cat A: pig bite cat
+Q: every black cat love the cat A: cat love cat
+Q: a pig A: pig
+Q: the little pig love every white pig A: pig love pig
+Q: the dog A: dog
+Q: the black pig A: pig
+Q: the pig A: pig
+Q: a little dog A: dog
+Q: a dog love every little dog A: dog love dog
+Q: a cat love the dog A: cat love dog
+Q: every pig bite every pig A: pig bite pig
+Q: a white dog A: dog
+Q: every little pig bite a white dog A: pig bite dog
+Q: a dog love the cat A: dog love cat
+Q: every dog chase the cat A: dog chase cat
+Q: a dog A: dog
+Q: every pig love the black dog A: pig love dog
+Q: the white pig love every black dog A: pig love dog
+Q: a pig chase the pig A: pig chase pig
+Q: a white cat A: cat
+Q: the black pig chase every white cat A: pig chase cat
+Q: a dog love a little dog A: dog love dog
+Q: every white pig love a black cat A: pig love cat
+Q: every little cat A: cat
+Q: a dog A: dog
+Q: the pig A: pig
+Q: a little pig A: pig
+Q: every pig chase a white dog A: pig chase dog
+Q: every dog A: dog
+Q: a black pig love every white dog A: pig love dog
+Q: the black pig A: pig
+Q: the cat bite the white pig A: cat bite pig
+Q: the dog bite a dog A: dog bite dog
+Q: the cat A: cat
+Q: a little pig love every pig A: pig love pig
+Q: the pig chase the pig A: pig chase pig
+Q: the black cat love the little cat A: cat love cat
+Q: a cat bite the white dog A: cat bite dog
+Q: every little pig A: pig
+Q: the black pig A: pig
+Q: the black cat A: cat
+Q: a black cat A: cat
+Q: the white cat A: cat
+Q: every pig A: pig
+Q: every dog A: dog
+Q: a little pig chase a cat A: pig chase cat
+Q: every dog A: dog
+Q: the dog A: dog
+Q: every little pig A: pig
+Q: a pig bite every white dog A: pig bite dog
+Q: the white cat A: cat
+Q: every little dog love a white pig A: dog love pig
+Q: the dog A: dog
+Q: the white cat A: cat
+Q: a black cat love the little dog A: cat love dog
+Q: the black pig bite every cat A: pig bite cat
+Q: every black dog love the little pig A: dog love pig
+Q: a pig chase a little cat A: pig chase cat
+Q: every white pig A: pig
+Q: the black cat A: cat
+Q: the dog chase every pig A: dog chase pig
+Q: every pig A: pig
+Q: a dog A: dog
+Q: a pig A: pig
+Q: every pig A: pig
+Q: every pig A: pig
+Q: the black cat chase a black pig A: cat chase pig
+Q: a black pig love a dog A: pig love dog
+Q: a cat chase every white dog A: cat chase dog
+Q: every black pig A: pig
+Q: every black dog A: dog
+Q: a white cat A: cat
+Q: a black pig love a pig A: pig love pig
+Q: every dog A: dog
+Q: a little pig A: pig
+Q: every little pig chase every little pig A: pig chase pig
+Q: the cat A: cat
+Q: every white cat bite every little pig A: cat bite pig
+Q: the white cat A: cat
+Q: every little cat A: cat
+Q: a dog love the cat A: dog love cat
+Q: every black dog bite every little dog A: dog bite dog
+Q: the pig A: pig
+Q: a little cat A: cat
+Q: a white pig love the pig A: pig love pig
+Q: a pig bite a white cat A: pig bite cat
+Q: the dog A: dog
+Q: every little dog chase every little pig A: dog chase pig
+Q: the cat A: cat
+Q: a little cat A: cat
+Q: a pig love a cat A: pig love cat
+Q: the black cat chase a dog A: cat chase dog
+Q: every pig love a little pig A: pig love pig
+Q: the cat A: cat
+Q: every dog A: dog
+Q: a cat A: cat
+Q: every dog chase a white pig A: dog chase pig
+Q: every cat A: cat
+Q: every black pig A: pig
+Q: every white cat love a black dog A: cat love dog
+Q: a cat A: cat
+Q: a black cat A: cat
+Q: a dog A: dog
+Q: every pig love every cat A: pig love cat
+Q: a black pig chase every white pig A: pig chase pig
+Q: every dog A: dog
+Q: the white pig A: pig
+Q: the dog bite the white pig A: dog bite pig
+Q: a pig A: pig
+Q: every dog A: dog
+Q: a little dog bite the black pig A: dog bite pig
+Q: the black dog A: dog
+Q: a white dog A: dog
+Q: the little pig chase every dog A: pig chase dog
+Q: the cat A: cat
+Q: every dog A: dog
+Q: every white dog A: dog
+Q: a pig love every pig A: pig love pig
+Q: a black pig chase every black cat A: pig chase cat
+Q: a cat chase the cat A: cat chase cat
+Q: every white dog chase a cat A: dog chase cat
+Q: the cat love the cat A: cat love cat
+Q: the white dog bite the pig A: dog bite pig
+Q: a dog chase a dog A: dog chase dog
+Q: a pig chase every white pig A: pig chase pig
+Q: every cat A: cat
+Q: a black pig A: pig
+Q: a cat love a pig A: cat love pig
+Q: a black pig love a cat A: pig love cat
+Q: every little cat A: cat
+Q: the dog bite the black cat A: dog bite cat
+Q: a black pig chase a little pig A: pig chase pig
+Q: a cat A: cat
+Q: every pig love every black cat A: pig love cat
+Q: every cat chase every white pig A: cat chase pig
+Q: a white cat chase a dog A: cat chase dog
+Q: every little dog bite a black cat A: dog bite cat
+Q: every dog A: dog
+Q: every dog chase a black pig A: dog chase pig
+Q: a white pig love the white cat A: pig love cat
+Q: every black pig A: pig
+Q: the little dog A: dog
+Q: every cat chase a black dog A: cat chase dog
+Q: the black cat love every dog A: cat love dog
+Q: every black pig A: pig
+Q: a dog love every dog A: dog love dog
+Q: the little dog A: dog
+Q: a dog bite the cat A: dog bite cat
+Q: every little cat A: cat
+Q: a cat A: cat
+Q: the pig A: pig
+Q: every cat love every black pig A: cat love pig
+Q: a dog chase every black pig A: dog chase pig
+Q: the cat A: cat
+Q: the little cat chase a little dog A: cat chase dog
+Q: every little cat bite a black pig A: cat bite pig
+Q: every little cat A: cat
+Q: the white pig chase the dog A: pig chase dog
+Q: a cat A: cat
+Q: a cat A: cat
+Q: the little dog A: dog
+Q: a little cat A: cat
+Q: a black pig love every black cat A: pig love cat
+Q: a cat A: cat
+Q: a pig A: pig
+Q: a white pig chase the black pig A: pig chase pig
+Q: the cat bite the pig A: cat bite pig
+Q: the dog chase every cat A: dog chase cat
+Q: the pig A: pig
+Q: the cat A: cat
+Q: the little dog A: dog
+Q: a black dog love every cat A: dog love cat
+Q: every black dog A: dog
+Q: the cat A: cat
+Q: every little cat bite every cat A: cat bite cat
+Q: a pig chase the black pig A: pig chase pig
+Q: the dog A: dog
+Q: every pig A: pig
+Q: the dog chase the black pig A: dog chase pig
+Q: a white cat bite the dog A: cat bite dog
+Q: a cat bite a white dog A: cat bite dog
+Q: every white cat love a pig A: cat love pig
+Q: a cat love every little cat A: cat love cat
+Q: every dog chase every little cat A: dog chase cat
+Q: a cat A: cat
+Q: every little dog chase a cat A: dog chase cat
+Q: the pig A: pig
+Q: every black cat A: cat
+Q: a black dog bite a black dog A: dog bite dog
+Q: every cat bite a white cat A: cat bite cat
+Q: every dog A: dog
+Q: every white pig A: pig
+Q: the pig bite the little dog A: pig bite dog
+Q: a little cat A: cat
+Q: the little pig A: pig
+Q: every dog A: dog
+Q: every black cat love the white cat A: cat love cat
+Q: a cat bite the pig A: cat bite pig
+Q: a dog bite the pig A: dog bite pig
+Q: a little dog A: dog
+Q: the white cat bite a pig A: cat bite pig
+Q: every cat bite a pig A: cat bite pig
+Q: every little dog chase the black cat A: dog chase cat
+Q: a cat chase a white pig A: cat chase pig
+Q: every white pig A: pig
+Q: the black cat bite every cat A: cat bite cat
+Q: the black cat bite the cat A: cat bite cat
+Q: the black cat love every little pig A: cat love pig
+Q: a pig chase a black pig A: pig chase pig
+Q: every little cat bite every little pig A: cat bite pig
+Q: the white cat A: cat
+Q: the little dog chase every pig A: dog chase pig
+Q: the cat bite a pig A: cat bite pig
+Q: every black pig bite the white cat A: pig bite cat
+Q: the black pig A: pig
+Q: a pig bite every white cat A: pig bite cat
+Q: the little pig bite every dog A: pig bite dog
+Q: every little pig chase a black dog A: pig chase dog
+Q: every white dog love the white cat A: dog love cat
+Q: the dog A: dog
+Q: a white cat A: cat
+Q: every black pig A: pig
+Q: a pig bite the dog A: pig bite dog
+Q: the black dog A: dog
+Q: a little cat love every cat A: cat love cat
+Q: a cat bite the white pig A: cat bite pig
+Q: the little pig A: pig
+Q: every pig bite the pig A: pig bite pig
+Q: every little pig chase the white dog A: pig chase dog
+Q: the little pig love a black dog A: pig love dog
+Q: every cat A: cat
+Q: the cat love a dog A: cat love dog
+Q: every cat love a pig A: cat love pig
+Q: every pig A: pig
+Q: a dog A: dog
+Q: every little pig A: pig
+Q: every pig bite a little pig A: pig bite pig
+Q: the dog A: dog
+Q: every little dog chase every cat A: dog chase cat
+Q: the black cat love a cat A: cat love cat
+Q: every little cat A: cat
+Q: every dog love the little pig A: dog love pig
+Q: every cat A: cat
+Q: every pig A: pig
+Q: every black dog love a cat A: dog love cat
+Q: every cat bite a little cat A: cat bite cat
+Q: a dog A: dog
+Q: a black cat bite every little cat A: cat bite cat
+Q: a pig A: pig
+Q: the white dog A: dog
+Q: the dog bite the white dog A: dog bite dog
+Q: every black pig A: pig
+Q: the pig bite a little pig A: pig bite pig
+Q: the white cat chase the pig A: cat chase pig
+Q: every white cat A: cat
+Q: a dog love a cat A: dog love cat
+Q: every cat A: cat
+Q: a little pig love a dog A: pig love dog
+Q: the pig bite the black dog A: pig bite dog
+Q: a white pig A: pig
+Q: a pig A: pig
+Q: a white pig A: pig
+Q: a little pig love every dog A: pig love dog
+Q: every little cat A: cat
+Q: a white dog love a cat A: dog love cat
+Q: the black pig A: pig
+Q: every dog bite the cat A: dog bite cat
+Q: every black pig bite every black cat A: pig bite cat
+Q: every dog love the pig A: dog love pig
+Q: a black dog A: dog
+Q: the cat love every cat A: cat love cat
+Q: every pig love every pig A: pig love pig
+Q: the black dog chase every black cat A: dog chase cat
+Q: the white pig A: pig
+Q: a cat bite every cat A: cat bite cat
+Q: every pig A: pig
+Q: every little cat love every white cat A: cat love cat
+Q: every dog A: dog
+Q: every pig A: pig
+Q: every cat A: cat
+Q: a little cat A: cat
+Q: every little dog A: dog
+Q: the pig A: pig
+Q: a cat chase a dog A: cat chase dog
+Q: every little dog A: dog
+Q: every cat chase every dog A: cat chase dog
+Q: every cat A: cat
+Q: every white pig A: pig
+Q: the black cat A: cat
+Q: a black pig love the cat A: pig love cat
+Q: every pig A: pig
+Q: a white dog A: dog
+Q: every white cat chase every black dog A: cat chase dog
+Q: every pig bite the little cat A: pig bite cat
+Q: a white cat A: cat
+Q: the pig bite every little cat A: pig bite cat
+Q: every white pig bite every cat A: pig bite cat
+Q: a pig chase a cat A: pig chase cat
+Q: the pig chase every cat A: pig chase cat
+Q: every cat chase a black cat A: cat chase cat
+Q: a cat A: cat
+Q: the white dog A: dog
+Q: a cat A: cat
+Q: the black pig bite every black dog A: pig bite dog
+Q: a black dog love a little dog A: dog love dog
+Q: every dog love every cat A: dog love cat
+Q: every little cat A: cat
+Q: every white cat A: cat
+Q: a dog A: dog
+Q: every white pig A: pig
+Q: every dog bite the white dog A: dog bite dog
+Q: the white cat A: cat
+Q: a dog A: dog
+Q: the little cat A: cat
+Q: every black dog A: dog
+Q: every cat love the little pig A: cat love pig
+Q: every cat love every black cat A: cat love cat
+Q: every cat A: cat
+Q: every black pig love the cat A: pig love cat
+Q: a dog bite the black dog A: dog bite dog
+Q: a pig bite the pig A: pig bite pig
+Q: every dog A: dog
+Q: the little pig love every pig A: pig love pig
+Q: a pig bite a cat A: pig bite cat
+Q: a cat bite a dog A: cat bite dog
+Q: a dog A: dog
+Q: every white dog love every pig A: dog love pig
+Q: the dog A: dog
+Q: every dog love a dog A: dog love dog
+Q: the dog chase every black dog A: dog chase dog
+Q: a cat A: cat
+Q: a white dog A: dog
+Q: the pig bite every little dog A: pig bite dog
+Q: the white dog A: dog
+Q: the cat A: cat
+Q: the pig bite a little cat A: pig bite cat
+Q: every white cat A: cat
+Q: the pig love a black pig A: pig love pig
+Q: the dog A: dog
+Q: the dog chase every dog A: dog chase dog
+Q: the white cat A: cat
+Q: the white pig A: pig
+Q: the dog chase the white cat A: dog chase cat
+Q: the white pig A: pig
+Q: the pig A: pig
+Q: every cat A: cat
+Q: every cat A: cat
+Q: a cat bite every white cat A: cat bite cat
+Q: the dog love every black pig A: dog love pig
+Q: a pig bite the little dog A: pig bite dog
+Q: a black cat A: cat
+Q: every black pig love every black pig A: pig love pig
+Q: a little pig love the white dog A: pig love dog
+Q: every little dog bite the cat A: dog bite cat
+Q: the pig A: pig
+Q: the black dog bite the cat A: dog bite cat
+Q: every white cat bite the pig A: cat bite pig
+Q: the little cat bite the white cat A: cat bite cat
+Q: the pig bite every white pig A: pig bite pig
+Q: the dog A: dog
+Q: a cat bite a white dog A: cat bite dog
+Q: every black cat love a pig A: cat love pig
+Q: the white pig bite every pig A: pig bite pig
+Q: a white cat bite a dog A: cat bite dog
+Q: the dog love the white cat A: dog love cat
+Q: every black pig chase the little pig A: pig chase pig
+Q: a dog love every cat A: dog love cat
+Q: every black pig A: pig
+Q: every white dog chase a dog A: dog chase dog
+Q: a cat A: cat
+Q: the black dog A: dog
+Q: every black cat A: cat
+Q: every cat bite a dog A: cat bite dog
+Q: every white dog bite every cat A: dog bite cat
+Q: every black dog A: dog
+Q: every black cat love a white cat A: cat love cat
+Q: every white pig A: pig
+Q: a cat chase every little pig A: cat chase pig
+Q: a black dog love the cat A: dog love cat
+Q: a white pig love every little pig A: pig love pig
+Q: every pig A: pig
+Q: a cat chase every black cat A: cat chase cat
+Q: every cat A: cat
+Q: a black pig chase a cat A: pig chase cat
+Q: every pig A: pig
+Q: the little cat A: cat
+Q: a black pig A: pig
+Q: a white dog A: dog
+Q: the pig A: pig
+Q: the dog A: dog
+Q: a cat A: cat
+Q: every little cat A: cat
+Q: a pig A: pig
+Q: a white dog chase a pig A: dog chase pig
+Q: the little cat A: cat
+Q: every dog bite every pig A: dog bite pig
+Q: a little dog chase a dog A: dog chase dog
+Q: every pig A: pig
+Q: a dog bite every black cat A: dog bite cat
+Q: a little dog love every dog A: dog love dog
+Q: the white pig love a dog A: pig love dog
+Q: the dog chase the white cat A: dog chase cat
+Q: every black cat chase a little pig A: cat chase pig
+Q: a white dog bite every pig A: dog bite pig
+Q: the cat love every pig A: cat love pig
+Q: every black cat A: cat
+Q: every dog A: dog
+Q: a cat bite the white dog A: cat bite dog
+Q: every little dog chase the little pig A: dog chase pig
+Q: a cat love the pig A: cat love pig
+Q: the dog chase the little cat A: dog chase cat
+Q: the pig A: pig
+Q: every cat A: cat
+Q: a little cat A: cat
+Q: a pig bite every dog A: pig bite dog
+Q: the black dog A: dog
+Q: every dog A: dog
+Q: a dog bite the white cat A: dog bite cat
+Q: the little dog A: dog
+Q: the pig bite a cat A: pig bite cat
+Q: a dog bite every little pig A: dog bite pig
+Q: every little cat love every white dog A: cat love dog
+Q: every black dog bite a cat A: dog bite cat
+Q: every dog A: dog
+Q: every cat chase every little cat A: cat chase cat
+Q: every cat love the white cat A: cat love cat
+Q: the black cat A: cat
+Q: a cat A: cat
+Q: every black pig bite the black dog A: pig bite dog
+Q: every little cat love a little dog A: cat love dog
+Q: the white dog chase every white cat A: dog chase cat
+Q: a pig chase a little cat A: pig chase cat
+Q: the white cat love the pig A: cat love pig
+Q: a pig A: pig
+Q: a dog A: dog
+Q: the black dog bite every cat A: dog bite cat
+Q: the little dog A: dog
+Q: the black pig love a little dog A: pig love dog
+Q: a little cat A: cat
+Q: the dog bite every white cat A: dog bite cat
+Q: a little pig love every dog A: pig love dog
+Q: a cat chase a little pig A: cat chase pig
+Q: the white dog bite a black pig A: dog bite pig
+Q: every cat A: cat
+Q: every pig A: pig
+Q: the white pig A: pig
+Q: the dog chase every little dog A: dog chase dog
+Q: every dog chase a cat A: dog chase cat
+Q: every black dog A: dog
+Q: a black pig A: pig
+Q: a white cat A: cat
+Q: the little cat A: cat
+Q: every cat A: cat
+Q: the white dog A: dog
+Q: a pig A: pig
+Q: a black dog chase every little dog A: dog chase dog
+Q: every black pig bite every cat A: pig bite cat
+Q: a white cat chase every white pig A: cat chase pig
+Q: a white cat A: cat
+Q: every cat A: cat
+Q: a black pig A: pig
+Q: a white cat A: cat
+Q: a dog A: dog
+Q: a black pig bite a white pig A: pig bite pig
+Q: the white dog A: dog
+Q: the pig A: pig
+Q: a black pig chase a little pig A: pig chase pig
+Q: the pig A: pig
+Q: the little dog A: dog
+Q: the cat chase a little pig A: cat chase pig
+Q: a little dog A: dog
+Q: every white dog A: dog
+Q: a cat A: cat
+Q: the dog bite a pig A: dog bite pig
+Q: a white dog love a pig A: dog love pig
+Q: the pig bite a white dog A: pig bite dog
+Q: a cat chase the white dog A: cat chase dog
+Q: the black cat A: cat
+Q: the pig bite a pig A: pig bite pig
+Q: the little pig bite a black cat A: pig bite cat
+Q: the little cat A: cat
+Q: the cat A: cat
+Q: a white cat chase a black pig A: cat chase pig
+Q: the black cat A: cat
+Q: the dog bite the black cat A: dog bite cat
+Q: every little pig A: pig
+Q: a little pig bite the little cat A: pig bite cat
+Q: the white cat chase a cat A: cat chase cat
+Q: the black cat A: cat
+Q: the pig A: pig
+Q: a little cat love a black cat A: cat love cat
+Q: every little pig love every black dog A: pig love dog
+Q: the little pig chase the pig A: pig chase pig
+Q: every pig A: pig
+Q: the little dog chase the pig A: dog chase pig
+Q: every little pig love a cat A: pig love cat
+Q: every black dog love the white pig A: dog love pig
+Q: a white cat A: cat
+Q: a cat chase every black pig A: cat chase pig
+Q: every white pig A: pig
+Q: every dog love every black cat A: dog love cat
+Q: a black dog chase a cat A: dog chase cat
+Q: the dog A: dog
+Q: every little dog A: dog
+Q: the dog bite every pig A: dog bite pig
+Q: the cat A: cat
+Q: the pig A: pig
+Q: a cat love every black pig A: cat love pig
+Q: the pig A: pig
+Q: every dog A: dog
+Q: the pig chase the dog A: pig chase dog
+Q: every dog love the little pig A: dog love pig
+Q: a white dog chase the pig A: dog chase pig
+Q: every black pig A: pig
+Q: a pig A: pig
+Q: every white pig A: pig
+Q: a pig bite the white dog A: pig bite dog
+Q: every pig A: pig
+Q: every black dog A: dog
+Q: the cat love every black dog A: cat love dog
+Q: a white dog A: dog
+Q: every cat love every cat A: cat love cat
+Q: a pig A: pig
+Q: the dog A: dog
+Q: a black pig A: pig
+Q: the cat A: cat
+Q: the little dog bite the little pig A: dog bite pig
+Q: every pig A: pig
+Q: the white dog love every little dog A: dog love dog
+Q: every cat chase every pig A: cat chase pig
+Q: a little pig bite every black dog A: pig bite dog
+Q: every white dog A: dog
+Q: every dog chase every black dog A: dog chase dog
+Q: every pig A: pig
+Q: a pig A: pig
+Q: a dog A: dog
+Q: the black cat chase a black dog A: cat chase dog
+Q: every dog love a little dog A: dog love dog
+Q: the pig love every little pig A: pig love pig
+Q: the pig A: pig
+Q: a black pig bite the black cat A: pig bite cat
+Q: every cat A: cat
+Q: the white cat chase a white dog A: cat chase dog
+Q: a dog A: dog
+Q: every little dog bite a cat A: dog bite cat
+Q: a pig love every white dog A: pig love dog
+Q: every cat love the dog A: cat love dog
+Q: every cat A: cat
+Q: the cat A: cat
+Q: the little pig love every cat A: pig love cat
+Q: the little cat A: cat
+Q: a pig chase every pig A: pig chase pig
+Q: every black dog A: dog
+Q: the little pig chase a little dog A: pig chase dog
+Q: the dog bite every dog A: dog bite dog
+Q: a pig bite a black cat A: pig bite cat
+Q: the white cat bite every black pig A: cat bite pig
+Q: every black pig love the dog A: pig love dog
+Q: a cat A: cat
+Q: a white dog A: dog
+Q: the pig A: pig
+Q: a little dog chase a dog A: dog chase dog
+Q: a white pig A: pig
+Q: the dog chase a white pig A: dog chase pig
+Q: the cat bite a dog A: cat bite dog
+Q: a white cat A: cat
+Q: the pig A: pig
+Q: a white pig A: pig
+Q: a little dog bite every pig A: dog bite pig
+Q: a dog bite a white cat A: dog bite cat
+Q: the black cat bite every pig A: cat bite pig
+Q: a cat A: cat
+Q: the little pig A: pig
+Q: a pig love every dog A: pig love dog
+Q: a dog A: dog
+Q: the black cat bite the black dog A: cat bite dog
+Q: a cat love the black dog A: cat love dog
+Q: a pig chase a white dog A: pig chase dog
+Q: the pig love the pig A: pig love pig
+Q: a white cat A: cat
+Q: a white dog love the cat A: dog love cat
+Q: the little cat A: cat
+Q: a white cat bite every little pig A: cat bite pig
+Q: a dog love a pig A: dog love pig
+Q: every white pig love the little pig A: pig love pig
+Q: the cat A: cat
+Q: every dog A: dog
+Q: a black cat bite every black pig A: cat bite pig
+Q: the white dog A: dog
+Q: the black dog bite every little dog A: dog bite dog
+Q: every little dog A: dog
+Q: a dog A: dog
+Q: every cat love every dog A: cat love dog

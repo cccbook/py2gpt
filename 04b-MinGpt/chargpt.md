@@ -6,7 +6,7 @@
 
 ## 執行過程與結果
 
-* 貓狗世界英文: [chatgpt_english.md](chargpt_english.md)
-* 數學運算式: [chatgpt_exp.md](chargpt_exp.md)
-* 貓狗世界問答(字數統計): [chatgpt_qa.md](chargpt_qa.md)
-* 莎士比亞： [chatgpt_shakespeare.md](chargpt_shakespeare.md)
+* 貓狗世界英文: [chatgpt_english.md](./md/chargpt_english.md)
+* 數學運算式: [chatgpt_exp.md](./md/chargpt_exp.md)
+* 貓狗世界問答(字數統計): [chatgpt_qa.md](./md/chargpt_qa.md)
+* 莎士比亞： [chatgpt_shakespeare.md](./md/chargpt_shakespeare.md)
