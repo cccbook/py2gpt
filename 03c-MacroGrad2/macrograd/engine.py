@@ -35,9 +35,9 @@ class Tensor:
         out = Tensor(self.data * other.data, (self, other), '*')
 
         def _backward():
-            # print('self.shape=', self.shape)
-            # print('other.shape=', other.shape)
-            # print('out.shape=', out.shape)
+            print('self.shape=', self.shape)
+            print('other.shape=', other.shape)
+            print('out.shape=', out.shape)
             self.grad += other.data * out.grad
             other.grad += self.data * out.grad
                         
@@ -114,7 +114,7 @@ class Tensor:
 
         return out
 
-    def cross_entropy(self, yb): # 這個感覺不應該放在 tensor 當中，因為會涉及 batch_size ，
+    def cross_entropy(self, yb):
         log_probs = self.log()
         zb = yb*log_probs
         outb = zb.sum(axis=1)
