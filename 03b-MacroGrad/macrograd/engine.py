@@ -20,9 +20,6 @@ class Tensor:
         out = Tensor(self.data + other.data, (self, other), '+')
 
         def _backward():
-            # print('self.grad = ', self.grad)
-            # print('other.grad = ', other.grad)
-            # print('out.grad = ', out.grad, 'op=', out._op)
             self.grad += out.grad
             other.grad += out.grad
         out._backward = _backward
@@ -35,9 +32,6 @@ class Tensor:
         out = Tensor(self.data * other.data, (self, other), '*')
 
         def _backward():
-            # print('self.shape=', self.shape)
-            # print('other.shape=', other.shape)
-            # print('out.shape=', out.shape)
             self.grad += other.data * out.grad
             other.grad += self.data * out.grad
                         
@@ -114,15 +108,13 @@ class Tensor:
 
         return out
 
-    def cross_entropy(self, yb): # 這個感覺不應該放在 tensor 當中，因為會涉及 batch_size ，
+    def cross_entropy(self, yb):
         log_probs = self.log()
-        zb = yb*log_probs
-        outb = zb.sum(axis=1)
+        outb = yb*log_probs
         loss = -outb.sum()  # cross entropy loss
         return loss # 本函數不用指定反傳遞，因為所有運算都已經有反傳遞了，所以直接呼叫 loss.backward() 就能反傳遞了
 
     def backward(self):
-
         # topological order all of the children in the graph
         topo = []
         visited = set()

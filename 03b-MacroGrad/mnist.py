@@ -17,7 +17,7 @@ def forward(X,Y,W):
     y_predW = X.matmul(W)
     probs = y_predW.softmax()
     loss = probs.cross_entropy(Y)
-    return loss
+    return loss.sum() # batch sum
 
 batch_size = 32
 steps = 20000
