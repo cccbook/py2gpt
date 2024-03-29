@@ -21,7 +21,8 @@ plt.scatter(X[:,0], X[:,1], c=y, s=20, cmap='jet')
 plt.show()
 '''
 # initialize a model 
-model = MLP(2, [16, 16, 1]) # 2-layer neural network
+# model = MLP(2, [16, 16, 1]) # 2-layer neural network
+model = MLP(2, [16, 1]) # 1-layer neural network
 
 # loss function
 def loss(batch_size=None):
@@ -65,6 +66,7 @@ print(total_loss, acc)
 
 # optimization
 for k in range(100):
+    print('k=', k)
     
     # forward
     total_loss, acc = loss()
@@ -78,7 +80,10 @@ for k in range(100):
     for p in model.parameters():
         print('p.data.shape=', p.data.shape)
         print('p.grad.shape=', p.grad.shape)
-        p.data -= learning_rate * p.grad
+        step = learning_rate * p.grad
+        print('step.shape=', step.shape)
+        p.data -= step
+        print('p.data.shape=', p.data.shape)
     
     if k % 1 == 0:
         print(f"step {k} loss {total_loss.data}, accuracy {acc*100}%")
