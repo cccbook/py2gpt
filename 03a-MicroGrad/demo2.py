@@ -1,8 +1,8 @@
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-from macrograd.engine import Tensor
-from macrograd.nn2 import Neuron, Layer, MLP
+from micrograd.engine import Value
+from micrograd.nn import Neuron, Layer, MLP
 
 np.random.seed(1337)
 random.seed(1337)
@@ -25,15 +25,15 @@ print(model)
 print("number of parameters", len(model.parameters()))
 
 # loss function
-def loss():
+def loss(batch_size=None):
     Xb, yb = X, y
-    inputs = [list(map(Tensor, xrow)) for xrow in Xb]
+    inputs = [list(map(Value, xrow)) for xrow in Xb]
     
     # forward the model to get scores
     scores = list(map(model, inputs))
     
     # svm "max-margin" loss
-    losses = [(1.0 + -yi*scorei).relu() for yi, scorei in zip(yb, scores)]
+    losses = [(1 + -yi*scorei).relu() for yi, scorei in zip(yb, scores)]
     data_loss = sum(losses) * (1.0 / len(losses))
     # L2 regularization
     '''
@@ -75,7 +75,7 @@ y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
 xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
                      np.arange(y_min, y_max, h))
 Xmesh = np.c_[xx.ravel(), yy.ravel()]
-inputs = [list(map(Tensor, xrow)) for xrow in Xmesh]
+inputs = [list(map(Value, xrow)) for xrow in Xmesh]
 scores = list(map(model, inputs))
 Z = np.array([s.data > 0 for s in scores])
 Z = Z.reshape(xx.shape)

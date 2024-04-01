@@ -2,7 +2,7 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 from macrograd.engine import Tensor
-from macrograd.nn2 import Neuron, Layer, MLP
+from macrograd.nn import MLP
 
 np.random.seed(1337)
 random.seed(1337)
@@ -13,28 +13,40 @@ from sklearn.datasets import make_moons, make_blobs
 X, y = make_moons(n_samples=100, noise=0.1)
 
 y = y*2 - 1 # make y be -1 or 1
+'''
 # visualize in 2D
 plt.figure(figsize=(5,5))
 plt.scatter(X[:,0], X[:,1], c=y, s=20, cmap='jet')
 
 plt.show()
-
+'''
 # initialize a model 
 model = MLP(2, [16, 16, 1]) # 2-layer neural network
-print(model)
-print("number of parameters", len(model.parameters()))
 
 # loss function
-def loss():
-    Xb, yb = X, y
-    inputs = [list(map(Tensor, xrow)) for xrow in Xb]
+def loss(batch_size=None):
     
+    # inline DataLoader :)
+    if batch_size is None:
+        Xb, yb = X, y
+    else:
+        ri = np.random.permutation(X.shape[0])[:batch_size]
+        Xb, yb = X[ri], y[ri]
+    # inputs = [list(map(Tensor, xrow)) for xrow in Xb]
+    inputs = Tensor(Xb)
+    outputs = Tensor(np.transpose([yb]))
+    print('outputs.shape=', outputs.shape)
     # forward the model to get scores
-    scores = list(map(model, inputs))
+    # scores = list(map(model, inputs))
+    scores = model(inputs)
     
     # svm "max-margin" loss
-    losses = [(1.0 + -yi*scorei).relu() for yi, scorei in zip(yb, scores)]
-    data_loss = sum(losses) * (1.0 / len(losses))
+    losses = (1. + (-outputs*scores)).relu() # [(1 + -yi*scorei).relu() for yi, scorei in zip(yb, scores)]
+    print('losses.shape=', losses.shape)
+    # print('losses.sum()=', losses.sum())
+    data_loss = losses.sum() * (1./losses.data.shape[0]) # data_loss = sum(losses) * (1.0 / len(losses))
+    # print('data_loss=', data_loss)
+    # exit()
     # L2 regularization
     '''
     alpha = 1e-4
@@ -43,14 +55,16 @@ def loss():
     total_loss = data_loss # + reg_loss
     
     # also get accuracy
-    accuracy = [(yi > 0) == (scorei.data > 0) for yi, scorei in zip(yb, scores)]
+    fscores = scores.data.flatten()
+    # print('yb=', yb, 'fscores=', fscores)
+    accuracy = [(yi > 0) == (scorei > 0) for yi, scorei in zip(yb, fscores)]
     return total_loss, sum(accuracy) / len(accuracy)
 
 total_loss, acc = loss()
 print(total_loss, acc)
 
 # optimization
-for k in range(10):
+for k in range(100):
     
     # forward
     total_loss, acc = loss()
@@ -62,6 +76,8 @@ for k in range(10):
     # update (sgd)
     learning_rate = 1.0 - 0.9*k/100
     for p in model.parameters():
+        print('p.data.shape=', p.data.shape)
+        print('p.grad.shape=', p.grad.shape)
         p.data -= learning_rate * p.grad
     
     if k % 1 == 0:

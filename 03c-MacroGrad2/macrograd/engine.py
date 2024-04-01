@@ -3,12 +3,16 @@ import numpy as np
 
 class Tensor:
     def __init__(self, data, _children=(), _op=''):
-        self.data = np.array(data)
+        # if not isinstance(data, list): raise
+        self.data = np.array(data) if isinstance(data, list) or isinstance(data, np.ndarray) else np.array([data])
         self.grad = np.zeros(self.data.shape)
         # internal variables used for autograd graph construction
         self._backward = lambda: None
         self._prev = set(_children)
         self._op = _op # the op that produced this node, for graphviz / debugging / etc
+
+    def zero_grad(self):
+        self.grad = np.zeros(self.data.shape)
 
     @property
     def shape(self):
@@ -30,7 +34,7 @@ class Tensor:
         other = other if isinstance(other, Tensor) else Tensor(np.zeros(self.shape)+other) # 讓維度一致
         # other = other if isinstance(other, Tensor) else Tensor(other)
         out = Tensor(self.data * other.data, (self, other), '*')
-
+#
         def _backward():
             self.grad += other.data * out.grad
             other.grad += self.data * out.grad
@@ -127,9 +131,8 @@ class Tensor:
         build_topo(self)
 
         # go one variable at a time and apply the chain rule to get its gradient
-        self.grad = 1
+        self.grad = np.array([1.0])
         for v in reversed(topo):
-            #print(v)
             v._backward()
 
     def __neg__(self): # -self
