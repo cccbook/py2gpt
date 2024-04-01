@@ -2,7 +2,7 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 from macrograd.engine import Tensor
-from macrograd.nn2 import Neuron, Layer, MLP
+from macrograd.nn import Neuron, Layer, MLP
 
 np.random.seed(1337)
 random.seed(1337)
