@@ -1,0 +1,32 @@
+# mnist.py
+
+* 程式 -- [mnist.py](mnist.py)
+
+學習用 macrograd 建構 MLP 來學習辨識手寫數字 MNIST 資料。
+
+## Run
+
+```
+$ python mnist.py
+loss in step 0 is 14.057709694153838
+loss in step 1000 is 0.7010154593458453
+loss in step 2000 is 0.5577916940604352
+loss in step 3000 is 0.5184433479992642
+loss in step 4000 is 0.46193887932668204
+loss in step 5000 is 0.4257966527082076
+loss in step 6000 is 0.4280999990192333
+loss in step 7000 is 0.3871600726082897
+loss in step 8000 is 0.37852045813931146
+loss in step 9000 is 0.36307194138868093
+loss in step 10000 is 0.3579148771488498
+loss in step 11000 is 0.3488524570070075
+loss in step 12000 is 0.34501394802734564
+loss in step 13000 is 0.33904800595222623
+loss in step 14000 is 0.32610647723833336
+loss in step 15000 is 0.32355564543540777
+loss in step 16000 is 0.31880692915943215
+loss in step 17000 is 0.33804139549559026
+loss in step 18000 is 0.31091145596732833
+loss in step 19000 is 0.3080115006454389
+loss in final step 20000 is 0.3000277282949612
+```

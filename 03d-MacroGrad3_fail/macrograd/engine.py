@@ -77,14 +77,15 @@ class Tensor:
         return out
 
     def softmax(self):
-        # data = self.data - np.max(self.data, axis=1) # 避免溢位 https://shusei-e.github.io/deep%20learning/softmax_without_overflow/
-        # out =  Tensor(np.exp(data) / np.sum(np.exp(data), axis=1)[:, None], (self,), 'softmax')
-        out =  Tensor(np.exp(self.data) / np.sum(np.exp(self.data), axis=1)[:, None], (self,), 'softmax')
+        data = self.data - np.max(self.data) # 避免溢位 https://shusei-e.github.io/deep%20learning/softmax_without_overflow/
+        out =  Tensor(np.exp(data) / np.sum(np.exp(data)), (self,), 'softmax')
+        # out =  Tensor(np.exp(self.data) / np.sum(np.exp(self.data), axis=1)[:, None], (self,), 'softmax')
         softmax = out.data
 
         def _backward():
-            s = np.sum(out.grad * softmax, 1)
-            t = np.reshape(s, [-1, 1]) # reshape 為 n*1
+            s = np.sum(out.grad * softmax)
+            # t = np.reshape(s, [-1, 1]) # reshape 為 n*1
+            t = s
             self.grad += (out.grad - t) * softmax
 
         out._backward = _backward
@@ -100,15 +101,17 @@ class Tensor:
 
         return out    
     
-    def sum(self,axis = None):
-        out = Tensor(np.sum(self.data,axis = axis), (self,), 'SUM')
+    def sum(self):
+        out = Tensor(np.sum(self.data), (self,), 'SUM')
         
         def _backward():
-            output_shape = np.array(self.data.shape)
-            output_shape[axis] = 1
-            tile_scaling = self.data.shape // output_shape
-            grad = np.reshape(out.grad, output_shape)
-            self.grad += np.tile(grad, tile_scaling)
+            # output_shape = np.array(self.data.shape)
+            # output_shape[axis] = 1
+            # tile_scaling = self.data.shape // output_shape
+            # grad = np.reshape(out.grad, output_shape)
+            # self.grad += np.tile(grad, tile_scaling)
+            grad = np.ones(self.data.shape)
+            self.grad += grad
             
         out._backward = _backward
 

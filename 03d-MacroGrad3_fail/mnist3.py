@@ -1,6 +1,7 @@
 # 來源 -- https://github.com/newcodevelop/micrograd/blob/master/mnist.ipynb
 
 from macrograd.engine import Tensor
+from macrograd.nn import Linear, ReLU, Net
 
 from keras.datasets import mnist
 import keras
@@ -13,15 +14,24 @@ train_images = train_images.reshape(60000, 784)
 test_images = test_images.reshape(10000, 784)
 y_train = keras.utils.to_categorical(y_train)
 
-def predict(X,W,W2):
-    y_predW = X.matmul(W).relu().matmul(W2)
-    print('y_predW=', y_predW)
+# net = Net([Linear(784, 10), ReLU(), Linear(10, 10)])
+# net = Net([Linear(784, 100), ReLU(), Linear(100, 10)])
+net = Net([Linear(784, 10)])
+
+def predict(X):
+    y_predW = net(X)
     return y_predW
 
-def forward(X,Y,W, W2):
-    y_predW = predict(X,W,W2)
+def forward(X,Y):
+    # print('X=', X)
+    y_predW = predict(X)
+    # print('y_predW=', y_predW)
     probs = y_predW.softmax()
+    #print('probs.shape=', probs.shape)
+    #print('probs=', probs)
     loss = probs.cross_entropy(Y)
+    #print('loss.shape=', loss.shape)
+    #print('loss=', loss)
     return loss.sum() # batch sum
 
 batch_size = 32
@@ -30,22 +40,22 @@ steps = 5000
 
 X = Tensor(train_images); Y = Tensor(y_train) # 全部資料
 # new initialized weights for gradient descent
-Wb = Tensor(np.random.randn(784, 100))
-Wb2 = Tensor(np.random.randn(100, 10))
 for step in range(steps):
     ri = np.random.permutation(train_images.shape[0])[:batch_size]
     Xb, yb = Tensor(train_images[ri]), Tensor(y_train[ri]) # Batch 資料
-    lossb = forward(Xb, yb, Wb, Wb2)
+    lossb = forward(Xb, yb)
+    # print('lossb=', lossb)
     lossb.backward()
     if step % 1000 == 0 or step == steps-1:
-        loss = forward(X, Y, Wb, Wb2).data/X.data.shape[0]
+        loss = forward(X, Y).data/X.data.shape[0]
         print(f'loss in step {step} is {loss}')
-    Wb.data = Wb.data - 0.01*Wb.grad # update weights, 相當於 optimizer.step()
-    Wb.grad = 0
+    for w in net.parameters():
+        w.data = w.data - 0.01*w.grad # update weights, 相當於 optimizer.step()
+        w.zero_grad()
 
 from sklearn.metrics import accuracy_score
 Xb = Tensor(test_images)
-ypred = predict(Xb, Wb, Wb2).data
+ypred = predict(Xb).data
 print(f'accuracy on test data is {accuracy_score(np.argmax(ypred,axis = 1),y_test)*100} %')
 
 '''
