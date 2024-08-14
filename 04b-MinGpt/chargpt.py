@@ -73,12 +73,12 @@ class CharDataset(Dataset):
 
     def __getitem__(self, idx):
         # grab a chunk of (block_size + 1) characters from the data
-        chunk = self.data[idx:idx + self.config.block_size + 1]
+        chunk = self.data[idx:idx + self.config.block_size + 1] # 比一個 block 多一個字，這樣才能做出 (x,y)
         # encode every character to an integer
-        dix = [self.stoi[s] for s in chunk]
+        dix = [self.stoi[s] for s in chunk] # 將字母轉成整數
         # return as tensors
-        x = torch.tensor(dix[:-1], dtype=torch.long)
-        y = torch.tensor(dix[1:], dtype=torch.long)
+        x = torch.tensor(dix[:-1], dtype=torch.long) # 前 block_size 個字是輸入 x
+        y = torch.tensor(dix[1:], dtype=torch.long) # 後 block_size 個字是答案 y (位移一個字)
         return x, y
 
 # -----------------------------------------------------------------------------
